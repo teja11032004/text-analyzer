@@ -12,10 +12,6 @@ def space_remover(request):
 def capitalize(request):
     return HttpResponse("This is the capitalize page.")
 
-
-from django.shortcuts import render
-from django.http import HttpResponse
-
 def remove_punctuation(request):
     input_text = request.POST.get('text', 'default')
     remove_punctuation = request.POST.get('removepunc', 'off')
